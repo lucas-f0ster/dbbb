@@ -2,7 +2,9 @@ import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import { IonPhaser } from '@ion-phaser/react'
 import Phaser from 'phaser'
-import { preload, create, update, collectStar, hitBomb } from '../game'
+import preload from '../game/preload'
+import create from '../game/create'
+import update from '../game/update'
 
 function App (props) {
   const [game, setGame] = useState({
@@ -19,18 +21,14 @@ function App (props) {
     scene: {
       preload: preload,
       create: create,
-      update: update,
-      collectStar: collectStar,
-      hitBomb: hitBomb
+      update: update
     }
   })
 
   return (
     <>
       <h1>DBB</h1>
-      {/* <div className='app'> */}
-      <IonPhaser game={game} initialize={{ initialize: false }} />
-      {/* </div> */}
+      <IonPhaser game={game} initialize={{ initialize: false }} score={score} />
     </>
   )
 }
