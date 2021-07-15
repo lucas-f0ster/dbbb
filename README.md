@@ -145,7 +145,7 @@ meetings.
 -	-If someone is having a bad time but you need information out of them, let them know 
 the importance and perhaps schedule a time to talk about it.
 -
--*Ricki-Jane has requested to be able to choose tasks that fit her best, and to be given 
+-	*Ricki-Jane has requested to be able to choose tasks that fit her best, and to be given 
 given manageable work and autonomy over who she pairs with. If she is having space 
 from coding, she would still like to be invited to join from time to time. Asking 
 how she is / what she needs has an adverse affect when she doesn't feel capable 
