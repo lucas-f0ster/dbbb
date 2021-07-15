@@ -73,7 +73,6 @@ export default function create () {
 
   //  Collide the player and the stars with the platforms
   this.physics.add.collider(game.player, game.platforms)
-  this.physics.add.collider(game.player2, game.platforms)
   this.physics.add.collider(game.stars, game.platforms)
   this.physics.add.collider(game.bombs, game.platforms)
 

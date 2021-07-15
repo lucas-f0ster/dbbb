@@ -28,7 +28,7 @@ function App (props) {
   return (
     <>
       <h1>DBB</h1>
-      <IonPhaser game={game} initialize={{ initialize: false }} score={score} />
+      <IonPhaser game={game} initialize={{ initialize: false }} />
     </>
   )
 }
