@@ -30,7 +30,7 @@ This repo includes:
 
 
 
-#######  Vibes && Scrum  ######
+## Vibes && Scrum ##
 
 ## Hours
 
@@ -104,45 +104,45 @@ Mechanics lead --Taine
 -
 ##  Agreements // Expectations
 -
---Communicate with the group. Everyone needs to know what is going on in order to 
+-	-Communicate with the group. Everyone needs to know what is going on in order to 
 work effectively as a team. This goes for stress levels, blocks, needs, long 
 breaks etc. Scrums and check ins are scheduled times to speak to where you're at, 
 otherwise use the slack group, speak with people individually or on an as needs 
 basis. Use your judgement and keep others in the loop if your actions will affect 
 them.
---Asking for help. Ask for help from team mates or teachers before the problem 
+-	-Asking for help. Ask for help from team mates or teachers before the problem 
 becomes too large, taxing or time consuming. This goes for both personal and 
 coding issues.
---Face conflict and tension if it arises. Get a mediator if necessary but don't 
+-	-Face conflict and tension if it arises. Get a mediator if necessary but don't 
 avoid conversations if they are asked for. It is fine to schedule a time rather 
 than talk about it immediately.
---Do what you say you will, communicate if you can't do the thing so others aren't 
+-	-Do what you say you will, communicate if you can't do the thing so others aren't 
 relying on work that never comes.
---Self responsibility, others will check in on you and fill whichever needs they can, 
+-	-Self responsibility, others will check in on you and fill whichever needs they can, 
 but ultimately it is up to you to ensure you are looking after yourself, having breaks, 
 practicing self empathy and managing your own workflow.
 -
---MVP by Saturday latest
---Pair programming so everyone is at least learning if they don't have a task, general 
+-	-MVP by Saturday latest
+-	-Pair programming so everyone is at least learning if they don't have a task, general 
 plan is to pair until the mvp is done then split into design / mechanical / stretch.
 -
---Be on time, and show up for each other.
---Respect each other, remain kind, listen to each other, have fun learning new stuff.
---No judgement on anyone's needs or opinions. We are cultivating a safe space for 
+-	-Be on time, and show up for each other.
+-	-Respect each other, remain kind, listen to each other, have fun learning new stuff.
+-	-No judgement on anyone's needs or opinions. We are cultivating a safe space for 
 everyone in this team.
 -
 -
 ## Needs && Wellbeing
 -
---Later start time to help those that need to commute, also not everyone has time to 
+-	-Later start time to help those that need to commute, also not everyone has time to 
 complete code in the evenings because of the commute.
---Understand MVD as a concept (minimum viable day), if someone communicates they 
+-	-Understand MVD as a concept (minimum viable day), if someone communicates they 
 need to be having a MVD, don't expect them them to be at full or even half capacity.
---If a team member is having a bad day, it is perfectly okay for them to just do what 
+-	-If a team member is having a bad day, it is perfectly okay for them to just do what 
 they can, even if it means doing nothing and just being present for the day and the 
 meetings.
---Human skills facilitators are always around for chats
---If someone is having a bad time but you need information out of them, let them know 
+-	-Human skills facilitators are always around for chats
+-	-If someone is having a bad time but you need information out of them, let them know 
 the importance and perhaps schedule a time to talk about it.
 -
 -*Ricki-Jane has requested to be able to choose tasks that fit her best, and to be given 
@@ -153,46 +153,46 @@ of communicating, so with these understandings in mind, let her come to you and 
 her be. 
 -
 -
---Have group lunches where we don't talk about code & can relax
---Basics, eat, don't just survive on coffee, get outside, move your body, rest your mind.
+-	-Have group lunches where we don't talk about code & can relax
+-	-Basics, eat, don't just survive on coffee, get outside, move your body, rest your mind.
 -	
 -
 -
 ## Stress Profiles
 -
--Morning check ins will help everyone to know if anyone is coming in to the day 
+-	-Morning check ins will help everyone to know if anyone is coming in to the day 
 stressed or low capacity. The general agreement is that everyone manages themselves 
 and remains self aware to know when stress is coming on. Communication will be 
 important so everyone can look at this stress profile and know better how to manage it.
 -
 -
 --Harriet
---Becomes distant and irritable, will put on headphones to block others out and focus
---Might need a code through with someone or just some outside time.
--
+-	-Becomes distant and irritable, will put on headphones to block others out and focus
+-	-Might need a code through with someone or just some outside time.
+-	
 --Ricki-Jane
---Looks ike silence and non communication
---Gets more upset than stressed, and will need others to speak kindly to her.
+-	-Looks ike silence and non communication
+-	-Gets more upset than stressed, and will need others to speak kindly to her.
 -
 --Edwyn
---Will grunt and swear instead of being verbose
---Doesn't like too many check ins when he's becoming stressed, likes to be gently called out 
+-	-Will grunt and swear instead of being verbose
+-	-Doesn't like too many check ins when he's becoming stressed, likes to be gently called out 
 in order to manage his own stress
 -
 --Taine
---Looks like he's visibly less chill than usual, becomes agitated
---Will swear at his computer, gets frustrated
+-	-Looks like he's visibly less chill than usual, becomes agitated
+-	-Will swear at his computer, gets frustrated
 -
 --Ben
---Will be loud or swearing
---Would like Edwyn to calm him down, if he's not there, act normally and leave him to 
+-	-Will be loud or swearing
+-	-Would like Edwyn to calm him down, if he's not there, act normally and leave him to 
 do his thing
 -
 --Sam
---Hard for him to know when he's stressed, looks like becoming diinterested in tasks
---Needs a walk outside
+-	-Hard for him to know when he's stressed, looks like becoming diinterested in tasks
+-	-Needs a walk outside
 -
 --Lucas
---Distant, non communicative, and 'decrease in unasked for and vaguely funny comments'
---Needs direction or structure, a clear idea of immediate and next tasks
+-	-Distant, non communicative, and 'decrease in unasked for and vaguely funny comments'
+-	-Needs direction or structure, a clear idea of immediate and next tasks
 -
