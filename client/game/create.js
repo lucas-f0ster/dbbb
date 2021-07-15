@@ -71,6 +71,22 @@ export default function create () {
     fill: '#000'
   })
 
+  // Create particle manager
+  game.spark = this.add.particles('spark').createEmitter({
+    // x: game.player.x,
+    // y: game.player.y,
+    speed: { min: 0, max: 0 },
+    // angle: { min: -180, max: 180 },
+    scale: { start: 0.5, end: 0.1 },
+    alpha: { start: 0.5, end: 0, ease: 'Expo.easeIn' },
+    blendMode: 'SCREEN',
+    // gravityY: 100,
+    lifespan: 1000,
+    follow: game.player
+  })
+  game.spark.reserve(1000)
+  console.log(game.player)
+
   //  Collide the player and the stars with the platforms
   this.physics.add.collider(game.player, game.platforms)
   this.physics.add.collider(game.stars, game.platforms)
@@ -80,4 +96,15 @@ export default function create () {
   this.physics.add.overlap(game.player, game.stars, collectStar, null, this)
 
   this.physics.add.collider(game.player, game.bombs, hitBomb, null, this)
+
+  // this.input.on('pointermove', (pointer) => {
+  //   game.spark.setPosition(pointer.x, pointer.y)
+  //   game.spark.emitParticle()
+  // })
+
+  // console.log(game.spark)
+  // game.spark.onParticleDeath((particle) => {
+  //   game.spark.setPosition(particle.x, particle.y)
+  //   game.spark.emitParticle()
+  // })
 }

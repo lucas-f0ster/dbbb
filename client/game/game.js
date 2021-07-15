@@ -7,6 +7,9 @@ var score = 0
 var gameOver = false
 var scoreText
 
+// particles
+var spark
+
 export default {
   player,
   stars,
@@ -15,5 +18,6 @@ export default {
   cursors,
   score,
   gameOver,
-  scoreText
+  scoreText,
+  spark
 }
