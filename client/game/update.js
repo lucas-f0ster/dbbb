@@ -32,23 +32,18 @@ export default function update () {
     // Dash needs to "stun" player if world edge or platform is hit
     // Player still has control of movement while in dash
     // No win condition is set
-    var dash;
-
+  
     if (game.cursors.space.isDown && game.cursors.left.isDown){
-        dash = -1500
-        game.player.body.velocity.x = dash
+          game.player.body.velocity.x = -1500
 
-    } else if (game.cursors.space.isDown && game.cursors.right.isDown) {
-        dash = 1500
-        game.player.body.velocity.x = dash
+    } else if (game.cursors.space.isDown && game.cursors.right.isDown){ 
+          game.player.body.velocity.x = 1500
 
-    } else if (game.cursors.space.isDown && game.cursors.up.isDown){
-        dash = -1500
-        game.player.body.velocity.y = dash
+    } else if (game.cursors.space.isDown && game.cursors.up.isDown){     
+          game.player.body.velocity.y = -1500
 
-    } else if (game.cursors.space.isDown && game.cursors.down.isDown){
-        dash = 1500
-        game.player.body.velocity.y = dash
+    } else if (game.cursors.space.isDown && game.cursors.down.isDown){      
+          game.player.body.velocity.y = 1500
 
     }
 // ******* Dash testing *******
