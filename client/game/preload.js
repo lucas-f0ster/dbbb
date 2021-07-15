@@ -7,6 +7,7 @@ export default function preload () {
     frameWidth: 32,
     frameHeight: 48
   })
+  this.load.image('spark', 'assets/blue.png')
 }
 
 // SETTING UP FILES FOR FULL REFACTOR - NO TOUCHY <3

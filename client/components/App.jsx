@@ -14,7 +14,7 @@ function App (props) {
     physics: {
       default: 'arcade',
       arcade: {
-        gravity: { y: 300 },
+        gravity: { y: 700 },
         debug: false
       }
     },
