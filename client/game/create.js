@@ -73,9 +73,9 @@ export default function create () {
 
   //  Collide the player and the stars with the platforms
   this.physics.add.collider(game.player, game.platforms)
-  this.physics.add.collider(game.player2, game.platforms)
+  // this.physics.add.collider(game.player2, game.platforms) Player2 not defined across the game - err message "isParent is not defined"
   this.physics.add.collider(game.stars, game.platforms)
-  this.physics.add.collider(game.bombs, game.platforms)
+  // this.physics.add.collider(game.bombs, game.platforms)
 
   //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
   this.physics.add.overlap(game.player, game.stars, collectStar, null, this)
