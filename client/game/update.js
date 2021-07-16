@@ -1,5 +1,6 @@
 const game = require('./game')
 
+
 export default function update () {
   if (game.gameOver) {
     return
@@ -50,5 +51,12 @@ export default function update () {
 
 
 
+// Allows player to pass through platforms while holding space
+    if (game.cursors.space.isDown){
+        game.player.setImmovable();
+
+    } else {
+        game.player.setImmovable(false)
+    }
 // ******* Dash testing *******
 }
