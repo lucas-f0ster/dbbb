@@ -75,11 +75,17 @@ export default function create () {
 
 // ****** Dash testing ********
 // This function is called when player collides with platforms
-// This should have the code that handles the player stun on impact
+
 
 // this.physics.pause() pauses the whole game - does not work with game.player.physics.pause()
     
+  // this.body.stop
 
+   
+  
+  
+
+  
   let func = function(){
    
     game.player.setBounce(0)
@@ -88,8 +94,8 @@ export default function create () {
 // ******* Dash testing ********
 
 
-  //  Collide the player and the stars with the platforms
-  this.physics.add.collider(game.player, game.platforms, func, null, this)
+  //  Collide the player and the stars with the platforms - more than one func can be passed 
+  this.physics.add.collider(game.player, game.platforms, func,  null, this)
   this.physics.add.collider(game.stars, game.platforms)
   this.physics.add.collider(game.bombs, game.platforms)
 

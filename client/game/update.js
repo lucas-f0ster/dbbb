@@ -50,13 +50,24 @@ export default function update () {
 
 
 
+// testing game pause func
+      // if (game.cursors.space.isDown){
+      //   this.physics.pause() 
+      // } else {
+      //   this.physics.pause(false) 
+      // }
+     
 
-// Allows player to pass through platforms while holding space
-    if (game.cursors.space.isDown){
-        game.player.setImmovable();
+
+    // Allows player to pass through platforms while holding space
+    // Could also be used as to turn off p v p during load/safe timef
+    
+    
+    if (game.cursors.space.isDown){ 
+      game.player.setImmovable() 
 
     } else {
-        game.player.setImmovable(false)
+      game.player.setImmovable(false)
     }
 // ******* Dash testing *******
 }
