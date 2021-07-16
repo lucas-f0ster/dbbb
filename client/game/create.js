@@ -2,18 +2,16 @@
 import Phaser from 'phaser'
 import collectStar from './collectStar'
 import hitBomb from './hitBomb'
+import { createTrail, createExplosion } from './particles'
 const game = require('./game')
 
 export default function create () {
-  //  A simple background for our game
-  this.add.image(400, 300, 'sky')
+  this.lights.enable()
+  game.keys = this.input.keyboard.addKeys('W,S,A,D')
 
   //  The platforms group contains the ground and the 2 ledges we can jump on
   game.platforms = this.physics.add.staticGroup()
-
-  //  Here we create the ground.
-  //  Scale it to fit the width of the game (the original sprite is 400x32 in size)
-  game.platforms.create(400, 568, 'ground').setScale(2).refreshBody()
+  game.platforms.create(400, 700, 'ground').setScale(4).refreshBody()
 
   //  Now let's create some ledges
   game.platforms.create(600, 400, 'ground')
@@ -22,10 +20,13 @@ export default function create () {
 
   // The player and its settings
   game.player = this.physics.add.sprite(100, 450, 'dude')
+  game.player2 = this.physics.add.sprite(200, 450, 'dude')
 
   //  Player physics properties. Give the little guy a slight bounce.
-  game.player.setBounce(0.2)
+  game.player.setBounce(0)
   game.player.setCollideWorldBounds(true)
+  game.player2.setBounce(0)
+  game.player2.setCollideWorldBounds(true)
 
   //  Our player animations, turning, walking left and walking right.
   this.anims.create({
@@ -72,23 +73,20 @@ export default function create () {
   })
 
   // Create particle manager
-  game.spark = this.add.particles('spark').createEmitter({
-    // x: game.player.x,
-    // y: game.player.y,
-    speed: { min: 0, max: 0 },
-    // angle: { min: -180, max: 180 },
-    scale: { start: 0.5, end: 0.1 },
-    alpha: { start: 0.5, end: 0, ease: 'Expo.easeIn' },
-    blendMode: 'SCREEN',
-    // gravityY: 100,
-    lifespan: 1000,
-    follow: game.player
-  })
-  game.spark.reserve(1000)
-  console.log(game.player)
+  createTrail(this)
+  createExplosion(this)
+  this.lights.active = true
+  this.lights.setAmbientColor(255, 255, 255)
+  game.pointLight2 = this.add.pointlight(0, 0, 5000, 100, 1, 0.1)
+  game.pointLight = this.add.pointlight(0, 0, 5000, 100, 1, 0.1)
+
+  game.pointLight2.color.r = 100
+  game.pointLight2.color.g = 0
+  game.pointLight2.color.b = 0
 
   //  Collide the player and the stars with the platforms
   this.physics.add.collider(game.player, game.platforms)
+  this.physics.add.collider(game.player2, game.platforms)
   this.physics.add.collider(game.stars, game.platforms)
   this.physics.add.collider(game.bombs, game.platforms)
 
@@ -96,15 +94,4 @@ export default function create () {
   this.physics.add.overlap(game.player, game.stars, collectStar, null, this)
 
   this.physics.add.collider(game.player, game.bombs, hitBomb, null, this)
-
-  // this.input.on('pointermove', (pointer) => {
-  //   game.spark.setPosition(pointer.x, pointer.y)
-  //   game.spark.emitParticle()
-  // })
-
-  // console.log(game.spark)
-  // game.spark.onParticleDeath((particle) => {
-  //   game.spark.setPosition(particle.x, particle.y)
-  //   game.spark.emitParticle()
-  // })
 }

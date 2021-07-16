@@ -8,6 +8,8 @@ export default function preload () {
     frameHeight: 48
   })
   this.load.image('spark', 'assets/blue.png')
+  this.load.image('spark2', 'assets/red.png')
+  this.load.image('dust', 'assets/dust.png')
 }
 
 // SETTING UP FILES FOR FULL REFACTOR - NO TOUCHY <3
