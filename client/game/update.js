@@ -29,9 +29,9 @@ export default function update () {
 
  // ******* Dash testing *******
     // Dash needs a time out - currently runs until key is released 
-    // Dash needs to "stun" player if world edge or platform is hit
-    // Player still has control of movement while in dash
-    // No win condition is set
+    // Dash needs to "stun" player if world edge or platform is hit 
+    // Player still has control of movement while in dash 
+    // No win condition is set 
   
     if (game.cursors.space.isDown && game.cursors.left.isDown){
           game.player.body.velocity.x = -1500
@@ -46,5 +46,9 @@ export default function update () {
           game.player.body.velocity.y = 1500
 
     }
+
+
+
+
 // ******* Dash testing *******
 }

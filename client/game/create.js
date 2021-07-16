@@ -2,6 +2,7 @@
 import Phaser from 'phaser'
 import collectStar from './collectStar'
 import hitBomb from './hitBomb'
+import hitObject from './hitObject'
 const game = require('./game')
 
 export default function create () {
@@ -71,14 +72,19 @@ export default function create () {
     fill: '#000'
   })
 
+
+
   //  Collide the player and the stars with the platforms
   this.physics.add.collider(game.player, game.platforms)
-  // this.physics.add.collider(game.player2, game.platforms) Player2 not defined across the game - err message "isParent is not defined"
   this.physics.add.collider(game.stars, game.platforms)
-  // this.physics.add.collider(game.bombs, game.platforms)
+  this.physics.add.collider(game.bombs, game.platforms)
 
   //  Checks to see if the player overlaps with any of the stars, if he does call the collectStar function
   this.physics.add.overlap(game.player, game.stars, collectStar, null, this)
 
   this.physics.add.collider(game.player, game.bombs, hitBomb, null, this)
+
+  this.physics.add.collider(game.player, game.stars, hitObject(game.player), null, this)
+
+
 }
