@@ -1,36 +1,37 @@
 import React, { useState } from 'react'
-import { connect } from 'react-redux'
 import { IonPhaser } from '@ion-phaser/react'
 import Phaser from 'phaser'
-import preload from '../game/preload'
-import create from '../game/create'
-import update from '../game/update'
+import Arena from '../game/arena'
+import LandingScreen from '../game/LandingScreen'
 
 function App (props) {
   const [game, setGame] = useState({
+    parent: 'monitor',
     type: Phaser.AUTO,
     width: 1280,
     height: 720,
+    input: {
+      gamepad: true
+    },
     physics: {
       default: 'arcade',
       arcade: {
-        gravity: { y: 700 },
+        gravity: { y: 1000 },
         debug: false
       }
     },
-    scene: {
-      preload: preload,
-      create: create,
-      update: update
-    }
+    scene: [
+      LandingScreen,
+      Arena
+    ]
+
   })
 
   return (
     <>
-      <h1>DBB</h1>
-      <IonPhaser game={game} initialize={{ initialize: false }} />
+      <IonPhaser game={game} initialize={{ initialize: true }} />
     </>
   )
 }
 
-export default connect()(App)
+export default (App)
